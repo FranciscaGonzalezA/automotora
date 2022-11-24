@@ -1,0 +1,68 @@
+SAVE
+-usuario
+{
+    "name":"John",
+    "lastName":"Doe",
+    "mail":"john.doe@nn.com"
+}
+
+-licencia
+{
+    "number": 5,
+    "expirationDate":"2022-11-25",
+    "driverClass":"B",
+    "status":"activo",
+    "user": {
+        "id": 1,
+        "name": "John",
+        "lastName": "Doe",
+        "mail": "john.doe@nn.com"
+    }
+}
+
+-auto
+{
+    "brand":"BMW",
+    "color":"Azul",
+    "model":"M3",
+    "value":30000000,
+    "year":2022
+}
+
+-buysell
+{
+    "amount": 5000000,
+    "buyDate":"2020-10-15",
+    "user": {
+            "id": 1,
+            "name": "John",
+            "lastName": "Doe",
+            "mail": "john.doe@nn.com"
+        }
+}
+
+-carsell
+{
+    "cuantity": 1,
+    "car": {
+        "id":3,
+        "brand":"BMW",
+        "color":"Azul",
+        "model":"M3",
+        "value":30000000,
+        "year":2022
+    },
+    "buySell": {
+        "id":4,
+        "amount": 5000000,
+        "buyDate":"2020-10-15",
+        "user": {
+            "id": 1,
+            "name": "John",
+            "lastName": "Doe",
+            "mail": "john.doe@nn.com"
+        }
+    }
+}
+
+http://localhost:8080/license/buscarLicenciaClase/B -> consulta que falla
